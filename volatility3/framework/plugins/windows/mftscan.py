@@ -33,7 +33,7 @@ class MFTScan(interfaces.plugins.PluginInterface, timeliner.TimeLinerInterface):
                 architectures=["Intel32", "Intel64"],
             ),
             requirements.VersionRequirement(
-                name="yarascanner", component=yarascan.YaraScanner, version=(2, 0, 0)
+                name="yarascanner", component=yarascan.YaraScanner, version=(2, 1, 0)
             ),
         ]
 
@@ -64,7 +64,7 @@ class MFTScan(interfaces.plugins.PluginInterface, timeliner.TimeLinerInterface):
 
         # Yara Rule to scan for MFT Header Signatures
         rules = yarascan.YaraScan.process_yara_options(
-            {"yara_rules": "/FILE0|FILE\\*|BAAD/"}
+            {"yara_string": "/FILE0|FILE\\*|BAAD/"}
         )
 
         # Read in the Symbol File
