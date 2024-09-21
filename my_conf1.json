@@ -1,0 +1,18 @@
+{
+  "decorate_comm": false,
+  "dump": false,
+  "elfs": false,
+  "kernel.layer_name.class": "volatility3.framework.layers.intel.Intel32e",
+  "kernel.layer_name.kernel_banner": "Linux version 6.1.94-99.176.amzn2023.x86_64 (mockbuild@ip-10-0-62-55) (gcc (GCC) 11.4.1 20230605 (Red Hat 11.4.1-2), GNU ld version 2.39-6.amzn2023.0.10) #1 SMP PREEMPT_DYNAMIC Tue Jun 18 14:57:56 UTC 2024",
+  "kernel.layer_name.kernel_virtual_offset": 0,
+  "kernel.layer_name.memory_layer.base_layer.class": "volatility3.framework.layers.physical.FileLayer",
+  "kernel.layer_name.memory_layer.base_layer.location": "file:///Users/amiteyal/Documents/BikiniBottom/dumps/memdump3.lime",
+  "kernel.layer_name.memory_layer.class": "volatility3.framework.layers.lime.LimeLayer",
+  "kernel.layer_name.page_map_offset": 44105728,
+  "kernel.offset": 0,
+  "kernel.symbol_table_name.class": "volatility3.framework.symbols.linux.LinuxKernelIntermedSymbols",
+  "kernel.symbol_table_name.isf_url": "file:///Users/amiteyal/Documents/Github/volatility3/volatility3/framework/symbols/linux/after_modify.json",
+  "kernel.symbol_table_name.symbol_mask": 0,
+  "pid": [],
+  "threads": false
+}

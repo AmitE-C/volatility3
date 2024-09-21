@@ -43,3 +43,5 @@ ENV/
 
 # PyTest cache files
 .pytest_cache/
+primary.raw
+primary-1.raw
