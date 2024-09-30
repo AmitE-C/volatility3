@@ -79,6 +79,7 @@ class LinuxIntelStacker(interfaces.automagic.StackerLayerInterface):
                 kaslr_shift, aslr_shift = cls.find_aslr(
                     context, table_name, layer_name, progress_callback=progress_callback
                 )
+                print("***KASLR, ASLR***", kaslr_shift, aslr_shift)
 
                 layer_class: Type = intel.Intel
                 if "init_top_pgt" in table.symbols:
@@ -93,6 +94,8 @@ class LinuxIntelStacker(interfaces.automagic.StackerLayerInterface):
                 dtb = cls.virtual_to_physical_address(
                     table.get_symbol(dtb_symbol_name).address + kaslr_shift
                 )
+                # dtb = 0x69b000 + (0x200a000 - 0x2000000)
+
 
                 # Build the new layer
                 new_layer_name = context.layers.free_layer_name("IntelLayer")
@@ -188,10 +191,10 @@ class LinuxIntelStacker(interfaces.automagic.StackerLayerInterface):
     def virtual_to_physical_address(cls, addr: int) -> int:
         """Converts a virtual linux address to a physical one (does not account
         of ASLR)"""
-        if addr > 0xffffffffb7000000:
-            return addr - 0xffffffffb7000000
-        # if addr > 0xFFFFFFFF80000000:
-        #     return addr - 0xFFFFFFFF80000000
+        # if addr > 0xffffffffb7000000:
+        #     return addr - 0xffffffffb7000000
+        if addr > 0xFFFFFFFF80000000:
+            return addr - 0xFFFFFFFF80000000
         return addr - 0xC0000000
 
 

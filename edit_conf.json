@@ -12,7 +12,7 @@
   "kernel.offset": 0,
   "kernel.symbol_table_name.class": "volatility3.framework.symbols.linux.LinuxKernelIntermedSymbols",
   "kernel.symbol_table_name.isf_url": "file:///Users/amiteyal/Documents/Github/volatility3/volatility3/framework/symbols/linux/after_modify.json",
-  "kernel.symbol_table_name.symbol_mask": 281474976710655,
+  "kernel.symbol_table_name.symbol_mask": 0,
   "pid": [],
   "threads": false
 }

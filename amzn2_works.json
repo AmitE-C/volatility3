@@ -1,0 +1,18 @@
+{
+  "decorate_comm": false,
+  "dump": false,
+  "elfs": false,
+  "kernel.layer_name.class": "volatility3.framework.layers.intel.Intel32e",
+  "kernel.layer_name.kernel_banner": "Linux version 4.14.193-149.317.amzn2.x86_64 (mockbuild@ip-10-0-1-32) (gcc version 7.3.1 20180712 (Red Hat 7.3.1-9) (GCC)) #1 SMP Thu Sep 3 19:04:44 UTC 2020\n\u0000",
+  "kernel.layer_name.kernel_virtual_offset": 0,
+  "kernel.layer_name.memory_layer.base_layer.class": "volatility3.framework.layers.physical.FileLayer",
+  "kernel.layer_name.memory_layer.base_layer.location": "file:///Users/amiteyal/Documents/BikiniBottom/dumps/amazon_linux_2.lime",
+  "kernel.layer_name.memory_layer.class": "volatility3.framework.layers.lime.LimeLayer",
+  "kernel.layer_name.page_map_offset": 33595392,
+  "kernel.offset": 0,
+  "kernel.symbol_table_name.class": "volatility3.framework.symbols.linux.LinuxKernelIntermedSymbols",
+  "kernel.symbol_table_name.isf_url": "file:///Users/amiteyal/Documents/Github/volatility3/volatility3/framework/symbols/linux/4.14.193-149.317.amzn2.x86_64.json",
+  "kernel.symbol_table_name.symbol_mask": 281474976710655,
+  "pid": [],
+  "threads": false
+}
